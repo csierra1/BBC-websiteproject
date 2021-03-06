@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Cecilia Sierra">
+  <meta name="Homepage" content="World News from UK">
+  <title>World News - Homepage</title>
+ <style> 
+  body{margin:5px;}
+  header {padding:30px; color:white;text-align:center;font-weight:bold;font-size:50px;
+  background:linear-gradient(#f39d9d,#b82424);}
+  nav{border-bottom: 1px solid black;background-color:darkgrey;padding:10px;text-decoration:none;}
+  main{background-color: floralwhite; margin:15px;}
+  .bar{display:inline-block;border-left:white 1px solid;padding:5px;text-decoration:none;}
+  a{color:black;font-size:18px;font-weight:bold;text-decoration:none;}
+  a.arrow{text-decoration: black;border:1px solid;border-radius: 10px 10px;color:white;}
+  a.arrow::after{content:" →";}
+  a.back{background:white;}
+  a:visited{color:blueviolet;}
+  a:hover{color:blue;} 
+  a.gov{background:url("link.png")no-repeat 100% 0;background-size:16px 16px;padding-right:19px;}
+  h1{border-left:red solid;font-weight: bold;font-size:25px;}
+  .table{background-color:antiquewhite;border:black 1px solid;width:500px;}
+  p{font-size:18px;margin:5px;}
+  h2{ text-decoration:underline;font-size:20px;}
+  .cell{border-bottom-style:solid; border-width:1px;text-align:center;font-size:18px;}
+  .cell2{border-top-style:dotted; border-width:1px; padding:5px;}
+  .high{color:red;}
+  .medium{color:orange;}
+  .low{color:green;}
+  .flex{display:flex;justify-content:space-evenly;}
+  .link{display:flex;column-gap:150px;}
+  .num{columns:2;}
+  .reel{background-image:url(tree.JPG);background-size:1700px;padding:10px;color:white;}
+  .future{background-image:url(land.JPG);background-size:1700px;padding:10px;color:white;}
+  .line{display:inline-table;}
+  .photo{border:tomato 2px dotted;}
+  footer{background-color: darkgrey;padding:5px;}
+</style>
+</head>
+<body>
+ <header>World News</header>
+ <nav>
+  <ol>
+  <li class="bar"><a href="singin.html" target=_blank>Sign in </a> </li>
+  <li class="bar"><a href="#">Home</a></li>
+  <li class="bar"><a href="#">News</a></li>
+  <li class="bar"><a href="#">Sports</a></li>
+  <li class="bar"><a href="#">Reel</a></li>
+  <li class="bar"><a href="#">Worklife</a></li>
+  <li class="bar"><a href="#">Travel</a></li>
+  <li class="bar"><a href="#">Future</a></li>
+  <li class="bar"><a href="#">Culture</a></li>
+  <li class="bar"><a href="#">More</a></li>
+  <li class="bar">
+    <form>
+        <input type="search" name="q" placeholder="Search">
+        <button type="submit">Go!</button>
+      </form>
+  </li>
+  <li class="bar"><div id="clockbox"><button onclick="getclock()">Date </button></div></li>
+  </ol>
+</nav>
+<main>
+ <section>
+  <h1>The coronavirus crisis</h1>
+  <p><em>Data actualized at <time datetime="2021-02-02"> 02/02/2021</time></em></p>
+  <div class="flex">
+  <img height="400" width="1000" src="covid map.jpg"alt="World coronavirus map">
+  <ul>
+  <li><h2> Incidence </h2></li>
+  <li class="high">High incidence</li>
+   <li class="medium">Medium incidence</li>
+   <li class="low"> Low incidence</li></ul>
+  </div><br/>
+  <a href="coronavirus.html" target=_blank> How is coronavirus and vaccinations going in the world?</a>
+  <h2> The numbers in UK</h2>
+  <div class="num">
+  <div class="table">
+  <table>
+  <th colspan=2 class="cell">People tested positive</th>
+  <th colspan=2 class="cell"> Deaths</th>
+  <th class="cell"> Patients in hospital</th>
+ <th class="cell"> Testing</th> 
+  <th class="cell"> Vaccinations (second dose)</th>
+  </tr>
+  <tr>
+  <td class="cell">Daily</td> <td class="cell">Total</td> 
+ <td class="cell">Daily</td> <td class="cell">Total</td>
+  <td class="cell">Current number</td> <td class="cell"> Tests daily</td>
+  <td class="cell"> Total</td>
+  </tr>
+  <tr class="cell">
+  <td> 18,607</td> <td>166,126</td> <td> 406</td> 
+  <td>8,033</td> <td>2,981</td> <td>574,012</td> <td>494,209</td>
+  </tr>
+  <tr><td colspan=7 class="cell2"> <b>Estimated R number:</b> 0.7 to 1.1</td> </tr>
+  </table>
+  </div>
+  <img src="cases recent.JPG" alt="Daily Covid cases UK">
+  </div>
+  Font: <a class="gov" href="https://coronavirus.data.gov.uk/" target="_blank">UK Government Data</a>
+  </section><hr/>
+  <section>
+ <h1>News</h1>
+ <div class="flex">
+ <img height="200" width="400" src="alessandra.jpg" alt="Alessandra Ocasio-Cortez">
+ <img height="200" width="400" src="face mask.jpg" alt="Types face masks">
+ <img height="200" width="400" src="baking.jpg" alt="baking tools">
+ </div>
+ <div class="link">
+ <a href="Alessandra.html" target="_blank">AOC-Ocasio-Cortez says she is sexual assault survivor</a>
+ <a href="face.html" target="_blank">
+  What is the best mask to wear?</a>
+ <a href="Backing.html" target="_blank">Why baking and cooking fill a void? </a>
+ </div>
+ </section><hr/>
+ <section>
+  <h1>Sports</h1>
+ </section> <hr/>
+ <section>
+  <h1>London Weather</h1>
+  <button>Change location</button>
+ </section><hr/>
+ <section class="reel">
+  <h1>Reel</h1>
+  <h2>The most amazing videos from BBC</h2>
+  <a class="arrow" href="https://www.bbc.com/reel" target="_blank">Visit Reel</a>
+  <div class="flex">
+  <img src="https://ychef.files.bbci.co.uk/432x243/p094t75b.jpg">
+  <img src="https://ychef.files.bbci.co.uk/432x243/p0961lsw.jpg">
+  <img src="https://ychef.files.bbci.co.uk/432x243/p08p2sd8.jpg">
+  </div>
+  <div class="link">
+  <a class="back"href="https://www.bbc.com/reel/video/p094t5zh/the-russian-cult-leader-who-thinks-he-is-jesus" target=_blank>
+   The Russian cult leader who thinks he is Jesus</a>
+  <a class="back" href="https://www.bbc.com/reel/video/p0960smc/how-far-would-you-go-to-hack-your-own-beauty-" target=_blank>
+   The algorithm that tells you how beautiful you are</a>
+  <a class="back" href="https://www.bbc.com/reel/video/p08p2rws/where-the-amish-go-on-holiday" target=_blank>
+   Rare images from inside the "Amish Las Vegas"</a>
+  </div>
+ </section> <hr/>
+ <section>
+  <h1>Editor's Picks</h1>
+ </section><hr/>
+ <section class="future">
+  <h1>Future Planet</h1>
+  <h2>Solutions for a sustainable world</h2>
+  <a class="arrow" href="https://wwww.bbc.com/future/future-planet" target="_blank">Visit Future Planet</a>
+  <div class="flex">
+   <img width="400" src="https://ychef.files.bbci.co.uk/624x351/p095d0r6.jpg">
+   <img width="400" src="https://ychef.files.bbci.co.uk/624x351/p0955gx2.jpg">
+   <img width="400"src="https://ychef.files.bbci.co.uk/624x351/p094q1j4.jpg">
+   </div>
+  <div class="link">
+   <a class="back"href="https://www.bbc.com/future/article/20210128-right-to-repair-how-the-french-are-fighting-avoidable-waste"
+   target=_blank> The country rejecting throwaway culture</a>
+   <a class="back" href="https://www.bbc.com/future/article/20210126-the-richest-human-made-marine-habitats-in-the-world-" target=_blank>
+   The new use for abandoned oil rigs</a>
+   <a class="back" href="https://www.bbc.com/future/article/20210121-lagos-nigeria-how-africas-largest-city-is-staying-afloat"
+   target=_blank> The city that refuses to sink</a>
+  </div>
+ </section><hr/>
+ <section class="flex">
+  <h1>FOLLOW THE FOOD </h1>
+  <h1>TECHNOLOGY OF BUSINESS</h1>
+ </section><hr/>
+ <section>
+  <h1>Featured video</h1><hr/>
+ </section>
+  <h1>More around</h1>
+ </section><hr/>
+ <section class="flex">
+  <h1> NEW TECH ECONOMY</h1>
+  <h1>FOLLOW THE FOOD</h1>
+ </section><hr/>
+  <h1>World in Pictures</h1>
+ <section class="photo">
+  <div  class="flex">
+   <img src="coffee.jpg">
+   <img src="sail.jpg">
+   </div>
+  <div class="flex">
+   <img width="400" src="happiness.jpg">
+   <img width="400"src="beach.jpg">
+   <img width="400" src="christmas.jpg">
+  </div>
+ </section><hr/>
+ <section>
+  <h1>IN OTHER LANGUAGES</h1>
+ </section>
+</main>
+<footer>
+ <h3>Explore World News</h3>
+  <ol>
+   <li class="bar"><a href="#">Home </a> </li>   <li class="bar"><a href="#">News</a></li>
+   <li class="bar"><a href="#">Sport</a></li>   <li class="bar"><a href="#">Reel</a></li>
+   <li class="bar"><a href="#">Worklife</a></li>   <li class="bar"><a href="#">Travel</a></li>
+   <li class="bar"><a href="#">Future</a></li>   <li class="bar"><a href="#">Culture</a></li>
+   <li class="bar"><a href="#">Music</a></li>   <li class="bar"><a href="#">TV</a></li>
+   <li class="bar"><a href="#"> Weather</a></li> <li class="bar"><a href="#"> Sounds</a></li>
+ </ol>
+ <form id="email">
+  <label for="subscribe"> Subscribe to our site:</label>
+  <input id="subscribe" name="email" placeholder="Enter your email">
+  <button type="submit">Subscribe!</button>
+ </form>
+ <adress><p>Information obtained from <a href="http://wwww.bbc.com">BBC.com</a></p></adress>
+</footer>
+</body>
+<script type="text/javascript">
+/*Get day of week, day, month in real time*/
+  function getclock(){
+  let ndate=new Date();
+  let nday=ndate.getDay();
+  let nmonth=ndate.getMonth();
+  let numday=ndate.getDate();
+  let weekday=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; 
+  let monthday=['January','February','March','April','May','June','July','August','October','November','December'];
+  let clock=(weekday[nday]+", "+numday+" "+monthday[nmonth]);
+ document.getElementById("clockbox").innerHTML=clock;}
+
+</script>
+</html>

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Cecilia Sierra">
+  <meta name="signin" content="World News from UK">
+  <title>World News - Sign in</title>
+  <style> 
+ body{margin:15px;}
+ header {padding:30px; color:white;text-align:center;font-weight:bold;font-size:50px;
+ background:linear-gradient(#f39d9d,#b82424);}
+ nav{border-bottom: 1px solid black;background-color:darkgrey;padding:10px;}
+ .bar{display:inline-block;border-left:white 1px solid;padding:5px;}
+ main{background-color: floralwhite; margin:15px;}
+ a{color:black;font-size:18px;font-weight:bold;text-decoration:none;}
+ a:visited{color:blueviolet;}
+ a:hover{color:blue;}
+ h1{text-decoration:underline; text-decoration-color:red;font-weight: bold;font-size:25px;}
+ label,input{display:table-cell;margin-bottom:10px;}
+ label{padding-right:10px;}
+ .part{display:flex;justify-content: space-evenly;}
+ footer{background-color: darkgrey;padding:5px;}
+</style>
+ </head>
+<body>
+<header>World News</header>
+<nav>
+  <ol>
+  <li class="bar"><a href="#" target=_blank>Sign in </a> </li>
+  <li class="bar"><a href="#">Home</a></li>
+  <li class="bar"><a href="#">News</a></li>
+  <li class="bar"><a href="#">Sports</a></li>
+  <li class="bar"><a href="#">Reel</a></li>
+  <li class="bar"><a href="#">Worklife</a></li>
+  <li class="bar"><a href="#">Travel</a></li>
+  <li class="bar"><a href="#">Future</a></li>
+  <li class="bar"><a href="#">Culture</a></li>
+  <li class="bar"><a href="#">More</a></li>
+  <li class="bar">
+    <form>
+        <input type="search" name="q" placeholder="Search">
+        <button type="submit">Go!</button>
+      </form>
+  </li>
+  </ol>
+</nav>
+<main>
+ <div class="part">
+  <form class="sign">
+  <h1>Log - in </h1>
+  <label for="email">Email:</label>
+  <input id="email" name="email" type="email" required>
+  <label for="pass"> Password:</label>
+  <input id="password" name="password" type="password" required>
+  <div><button type="submit">Log in!</button></div> 
+</form>
+  <form class="sign">
+    <h1> Sign - in </h1>
+    <label for="fname">First name: </label>
+    <input id="fname" name="fname" type="text" required>
+    <label for="lname">Last name: </label>
+    <input id="lname" name="lname" type="text" required>
+    <label for="date">Date of birth:</label>
+    <input type="date" id="dateInput" name="date" type="date" required> 
+    <label for="email">Email address: </label>
+    <input id="email" name="email" type="email" required>
+    <label for="pass"> Password (between 6-12 characters):</label>
+    <input id="password" name="password" type="password" required minlength="6" maxlength="12">
+    <label for="pass"> Confirm Password:</label>
+    <input id="password" name="password" type="password" required minlength="6" maxlength="12">
+    <div id="enter"><button>Submit</button></div>
+ </form>
+ </div>
+</main>
+<footer>
+ <h3>Explore World News</h3>
+ <ol>
+  <li class="bar"><a href="#">Home </a> </li>   <li class="bar"><a href="#">News</a></li>
+  <li class="bar"><a href="#">Sport</a></li>   <li class="bar"><a href="#">Reel</a></li>
+  <li class="bar"><a href="#">Worklife</a></li>   <li class="bar"><a href="#">Travel</a></li>
+  <li class="bar"><a href="#">Future</a></li>   <li class="bar"><a href="#">Culture</a></li>
+  <li class="bar"><a href="#">Music</a></li>   <li class="bar"><a href="#">TV</a></li>
+  <li class="bar"><a href="#"> Weather</a></li> <li class="bar"><a href="#"> Sounds</a></li>
+ </ol>
+ <form>
+  <label for="subscribe"> Subscribe to our site:</label>
+  <input id="subscribe" name="email" placeholder="Enter your email" type="email" required>
+  <button type="submit">Subscribe!</button>
+ </form>
+ <adress><p>Information obtained from <a href="http://wwww.bbc.com">BBC.com</a></p></adress>
+ </footer>
+</body>
+<script type="text/javascript">
+/*check if the email introducted is valid*/
+ const email = document.getElementById("email");
+ email.addEventListener("input", function (event) {if (email.validity.typeMismatch)
+ {email.setCustomValidity("Enter a valid email!");}
+ else {email.setCustomValidity("");}});
+
+ /*display message when sign-in*/
+ document.getElementById("enter").onclick=function(){
+ alert ("Submited");}
+</script>
+</html>
